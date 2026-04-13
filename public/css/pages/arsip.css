@@ -1,0 +1,89 @@
+.arsip-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.arsip-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.arsip-card-header {
+    background: #1a365d;
+    color: white;
+    padding: 16px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.arsip-card-body {
+    padding: 20px;
+}
+
+.filter-group {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.filter-select {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.penerima-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.penerima-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.badge-rahasia {
+    background-color: #dc3545;
+    color: white;
+}
+
+.badge-biasa {
+    background-color: #0d6efd;
+    color: white;
+}
+
+.fa-file-pdf { color: #dc3545; }
+.fa-file-word { color: #2b579a; }
+.fa-file-excel { color: #217346; }
+.fa-file-image { color: #fd7e14; }
+.fa-file { color: #6c757d; }
+
+@media (max-width: 768px) {
+    .arsip-card-body {
+        padding: 15px;
+    }
+    
+    .btn-group-sm {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    .btn-group-sm .btn {
+        margin-bottom: 5px;
+    }
+}
+
+.arsip-loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.arsip-loading.active {
+    display: block;
+}

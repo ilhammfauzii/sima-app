@@ -1,0 +1,37 @@
+.bg-login-full-image {
+    position: relative;
+}
+
+.bg-login-full-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../../img/background_login.jpg') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.bg-login-image {
+    background: url('../../img/login-pic.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+#copyright-footer {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 0.9rem;
+}
+
+.logo-perusahaan {
+    height: 43px;
+    margin-right: 8px;
+    width: auto;
+}

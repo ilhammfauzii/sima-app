@@ -1,0 +1,51 @@
+@extends('layouts.app')
+
+@section('title', 'Penambahan Alat dan Stok Alat Engineer')
+
+@section('content')
+<div class="container-fluid">
+    <h1 class="h3 mb-4 text-gray-800 font-weight-bold text-center text-md-left">TAMBAH ALAT DAN STOK ALAT ENGINEER</h1>
+    <form method="POST" action="{{ route('barang_engineer.store') }}"> 
+        @csrf
+        <div class="card shadow mb-4">
+            <div class="card-body">
+
+                <div class="form-group">
+                    <label for="master_barang_id">Pilih Alat :</label>
+                    <select name="master_barang_id" id="item-select-0" class="form-control select2-item" data-placeholder="-- Pilih Alat --" required>
+                        <option value=""></option>
+                        @foreach ($master_barang as $barang)
+                            <option value="{{ $barang->id }}">{{ $barang->kode_barang }} - {{ $barang->nama_barang }}</option>
+                        @endforeach
+                    </select>
+                    @error('master_barang_id')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="jumlah_tambah">Jumlah Stok Ditambahkan :</label>
+                    <input type="number" name="jumlah_tambah" id="jumlah_tambah" class="form-control @error('jumlah_tambah') is-invalid @enderror" min="1" required>
+                    @error('jumlah_tambah')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="keterangan">Keterangan :</label>
+                    <input type="text" name="keterangan" id="keterangan" class="form-control @error('keterangan') is-invalid @enderror" value="{{ old('keterangan') }}" required>
+                    @error('keterangan')
+                        <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-primary mr-2">Simpan</button>
+                    <a href="{{ route('pengadaan_barang_engineer.menu') }}" class="btn btn-secondary">Kembali</a>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+@endsection

@@ -1,0 +1,31 @@
+.btn.btn-excel {
+  background-color: #107c41;
+  border-color: #107c41;
+  color: #ffffff;
+
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.btn.btn-excel:hover,
+.btn.btn-excel:focus,
+.btn.btn-excel:active {
+  background-color: #0e6e3a;
+  border-color: #0e6e3a;
+  color: #ffffff;
+
+  background-image: none !important;
+  box-shadow: none !important;
+  transform: translateY(-1px);
+}
+
+.btn.btn-excel i,
+.btn.btn-excel .fa-file-excel {
+  color: #ffffff !important;
+}
+
+.btn.btn-excel:hover i,
+.btn.btn-excel:hover .fa-file-excel {
+  color: #ffffff !important;
+}

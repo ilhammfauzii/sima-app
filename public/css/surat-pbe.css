@@ -1,0 +1,80 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    color: #000;
+}
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.header-logo {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+.header-text {
+    line-height: 1.2;
+}
+.header-text h2 {
+    margin: 0;
+    font-size: 18pt;
+    font-weight: bold;
+}
+.header-text p {
+    margin: 0;
+    font-size: 12pt;
+}
+.header-line {
+    border: 0;
+    border-top: 4px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.letter-title {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 14pt;
+    text-decoration: underline;
+}
+.info-section p {
+    margin: 3px 0;
+}
+.item-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+.item-table th, .item-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+}
+.item-table td:nth-child(3) {
+    text-align: left;
+}
+
+.signatures {
+    width: 100%;
+    margin-top: 40px;
+}
+.signatures td {
+    text-align: center;
+    width: 50%;
+    vertical-align: top;
+}
+.signature-space {
+    height: 80px;
+}
+.signatures .signature-name {
+    font-weight: normal;
+}

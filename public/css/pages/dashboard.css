@@ -1,0 +1,26 @@
+.dashboard-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.card.border-left-info .fa-tools,
+.card.border-left-info .fa-sign-out-alt {
+    color: #17a2b8 !important;
+}
+.card.border-left-warning .fa-warehouse,
+.card.border-left-warning .fa-sign-out-alt {
+    color: #ffc107 !important;
+}
+.card.border-left-danger .fa-hard-hat,
+.card.border-left-danger .fa-sign-out-alt {
+    color: #dc3545 !important;
+}
+
+.card-body .row.no-gutters .col.mr-2 {
+    padding-right: 1rem;
+}

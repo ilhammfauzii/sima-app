@@ -1,0 +1,94 @@
+.menu-card {
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+}
+.menu-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.menu-card .btn {
+    border-radius: 20px;
+}
+
+.menu-card-modern {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1rem;
+    border: 1px solid #e3e6f0;
+}
+.menu-card-modern:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+.icon-circle {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.menu-card-modern .card-body {
+    padding: 2.5rem 1.5rem;
+}
+
+.card-icon-shadow {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 1rem;
+}
+.card-icon-shadow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.15) !important;
+}
+.fa-4x {
+    font-size: 3.5em;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+.card-hover-shadow-lg {
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.card-hover-shadow-lg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+.fa-4x {
+    font-size: 3.5em;
+}
+
+.menu-item-card {
+    background-color: #ffffff;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+.menu-item-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+    background-color: #f8f9fa; 
+}
+
+.menu-item-card .arrow-icon {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.menu-item-card:hover .arrow-icon {
+    transform: translateX(8px);
+    color: #495057 !important;
+}
+
+.menu-item-card .icon-container i {
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.menu-item-card:hover .icon-container i {
+    transform: rotate(3deg) scale(1.08); 
+}
+
+.menu-item-card:hover .text-dark {
+    color: #000000 !important;
+}
