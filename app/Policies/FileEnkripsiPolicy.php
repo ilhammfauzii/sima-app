@@ -38,6 +38,11 @@ class FileEnkripsiPolicy
             || $this->isReceiver($user,$file);
     }
 
+    public function downloadEncrypted(User $user, FileEnkripsi $file)
+    {
+        return $user->isSuperAdmin();
+    }
+
     public function decrypt(User $user, FileEnkripsi $file)
     {
         if ($user->isSuperAdmin()) {

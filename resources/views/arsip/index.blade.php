@@ -173,7 +173,7 @@
 
                                         @if($file->kategori == 'rahasia')
 
-                                            @can('download', $file)
+                                            @can('downloadEncrypted', $file)
                                                 <a href="{{ route('arsip.download-encrypted', $file->id) }}" class="btn btn-sm btn-secondary mx-1" title="Download File Terenkripsi">
                                                     <i class="fas fa-lock"></i>
                                                 </a>
